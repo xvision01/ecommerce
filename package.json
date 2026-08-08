@@ -1,7 +1,7 @@
 {
   "name": "3d-earth-explorer",
   "private": true,
-  "version": "0.2.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "topojson-client": "latest",
-    "vite": "latest",
     "react": "latest",
     "react-dom": "latest",
     "three": "latest",
+    "three-globe": "latest",
+    "topojson-client": "latest",
+    "vite": "latest",
     "world-atlas": "latest"
   },
   "devDependencies": {}
