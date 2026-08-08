@@ -1,60 +1,66 @@
-# Ecommerce
+# 🌍 3D Earth Explorer
 
-A modern full-stack e-commerce application built to provide a clean, scalable, and user-friendly online shopping experience.
+An interactive 3D globe that lets you explore our planet, rotate the Earth freely, zoom into regions, search for countries, and select countries to discover useful facts.
 
-## 🚀 Overview
+## ✨ Features
 
-This project is designed as a practical e-commerce platform with a focus on clean architecture, maintainable code, secure authentication, and a smooth customer experience.
-
-## ✨ Planned Features
-
-- User registration and authentication
-- Product catalog and product details
-- Product search and filtering
-- Shopping cart
-- Wishlist
-- Secure checkout
-- Order management
-- User profile and address management
-- Admin dashboard
-- Product and inventory management
-- Responsive UI
-- RESTful API
-
-## 🏗️ Project Structure
-
-The application will be organized into separate frontend and backend layers as the project evolves.
-
-```text
-ecommerce/
-├── frontend/      # Client-side application
-├── backend/       # Server-side application and API
-└── README.md
-```
+- 🌐 Interactive 3D Earth
+- 🖱️ Drag to rotate the globe in any direction
+- 🔎 Scroll to zoom
+- 🗺️ Country boundaries rendered on the globe
+- 👆 Click countries to open an information card
+- 🔍 Search for countries
+- 📊 Country facts including capital, population, area, continent, currency and languages
+- 💡 Short country-specific facts
+- 📱 Responsive desktop and mobile interface
+- 🌌 Modern space-inspired UI
 
 ## 🛠️ Tech Stack
 
-The technology stack will be selected and documented as development progresses. The project is intended to use modern web development tools and best practices.
+- React
+- Three.js
+- Three Globe
+- Vite
+- World Atlas / TopoJSON
+- CSS
 
-## 🎯 Goals
+## 🏗️ Architecture
 
-- Build a production-style e-commerce application
-- Practice full-stack development
-- Implement authentication and authorization
-- Work with databases and REST APIs
-- Follow clean and maintainable coding practices
-- Build a responsive and accessible user interface
+```text
+src/
+├── App.jsx       # Globe, interaction and country explorer UI
+├── main.jsx      # React entry point
+└── styles.css    # Application styling
+```
 
-## 📌 Project Status
+The globe uses geographic country boundaries from World Atlas and Three Globe for 3D rendering and interaction. The current country-facts layer is intentionally kept simple so it can later be replaced with a larger live country-data service.
 
-🚧 **In development**
+## 🚀 Run locally
 
-The project is currently being built and features will be added incrementally.
+```bash
+npm install
+npm run dev
+```
 
-## 🤝 Contributing
+Then open the local URL shown by Vite.
 
-Contributions, suggestions, and improvements are welcome. Feel free to open an issue or submit a pull request.
+## 📌 Project status
+
+**v1.0 — Interactive prototype complete**
+
+The core experience is implemented: a rotatable 3D Earth, country boundaries, country selection, search, and a country information panel.
+
+### Next possible upgrades
+
+- Complete factual data for every country
+- Live country-data API integration
+- Country highlighting on selection
+- Region/continent filters
+- City and landmark layers
+- Time zones and day/night visualization
+- Satellite/cloud/weather layers
+- Saved places and favorites
 
 ## 📄 License
 
-License information will be added as the project develops.
+This project is available for learning and personal development. Add a formal license before redistributing it as an open-source project.
